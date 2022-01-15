@@ -1,0 +1,14 @@
+---
+on:
+  - push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Set up OCaml
+        uses: ocaml/setup-ocaml@v1.1.11
+      - run: opam install . --deps-only --with-test
+      - run: opam exec -- dune build
