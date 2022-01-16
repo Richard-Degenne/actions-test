@@ -1,0 +1,9 @@
+(executable
+  (name runtest)
+  (libraries alcotest hello)
+)
+
+(rule
+  (alias runtest)
+  (action (run ./runtest.exe))
+)

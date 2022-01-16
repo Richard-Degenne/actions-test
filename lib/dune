@@ -1,5 +1,5 @@
 (library
   (name hello)
-  (modules hello)
   (public_name hello)
+  (modules hello)
 )

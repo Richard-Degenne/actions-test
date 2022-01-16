@@ -22,7 +22,7 @@
 
 (package
  (name hello)
- (synopsis "A dummy repo to toy around with GitHub Actions.")
+ (synopsis "A dummy repo to toy around with GitHub Actions")
  (description "A dummy repo to toy around with GitHub Actions.")
  (depends
   (alcotest :with-test)

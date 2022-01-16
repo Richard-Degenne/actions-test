@@ -12,3 +12,4 @@ jobs:
         uses: ocaml/setup-ocaml@v1.1.11
       - run: opam install . --deps-only --with-test
       - run: opam exec -- dune build
+      - run: opam exec -- dun runtest
